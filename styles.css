@@ -89,22 +89,34 @@ p {
 .dark-theme .form-textarea {
   /* TODO: Add dark theme form control styles */
   /* HINT: Use background-color, color, and border-color */
+  background-color: var(#212529);
+  color: var(#f8f9fa);
+  border-color: var(#6c757d);
+  transition: var(all 0.3s ease);
 }
 
 .dark-theme .table th {
   /* TODO: Add dark theme table header styles */
   /* HINT: Use background-color */
+  background-color: var(#212529);
+  color: var(#f8f9fa);
+  border-color: var(#6c757d);
 }
 
 .dark-theme .code-editor {
   /* TODO: Add dark theme code editor styles */
   /* HINT: Use background-color */
+  background-color: var(--dark);
+
 }
 
 /* Card Styles */
 .card {
   /* TODO: Add card styles */
   /* HINT: Use background-color, border-radius, box-shadow, transition */
+  background-color: var(--dark);
+  border-radius: 10px;
+  box-shadow: var(--card-shadow);
 }
 
 .card:hover {
@@ -769,6 +781,12 @@ input:checked + .slider-round:before {
 .panel-header {
   /* TODO: Add panel header styles */
   /* HINT: Use display, justify-content, align-items, margin-bottom, border-bottom, and padding-bottom */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--light-gray);
+  padding-bottom: 10px;
 }
 
 .panel-close {
@@ -796,6 +814,18 @@ input:checked + .slider-round:before {
 .customization-panel {
   /* TODO: Add customization panel styles */
   /* HINT: Use position, top, left, width, height, background-color, box-shadow, padding, overflow-y, transform, transition, and z-index */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  background-color: var(--card-bg);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow-y: auto;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
 }
 
 .customization-panel.open {
@@ -806,6 +836,16 @@ input:checked + .slider-round:before {
 .panel-toggle {
   /* TODO: Add panel toggle styles */
   /* HINT: Use position, top, right, z-index, padding, background-color, color, border, border-radius, and cursor */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1001;
+  padding: 8px 12px;
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .color-option {
@@ -827,26 +867,51 @@ input:checked + .slider-round:before {
 .widget {
   /* TODO: Add widget styles */
   /* HINT: Use background-color, border-radius, box-shadow, padding, display, and transition */
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: var(--card-shadow);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  transition: var(--transition);
 }
 
 .widget:hover {
   /* TODO: Add hover styles for widgets */
   /* HINT: Use transform and box-shadow */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+
 }
 
 .widget i {
   /* TODO: Add widget icon styles */
   /* HINT: Use font-size, color, and margin-right */
+  font-size: 2rem;
+  color: var(--info);
+  margin-right: 10px;
+
 }
 
 .widget-content {
   /* TODO: Add widget content styles */
   /* HINT: Use flex property */
+  flex: 3;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+
 }
 
 .widget h3 {
   /* TODO: Add widget heading styles */
   /* HINT: Use margin-top, margin-bottom, color, and font-size */
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--primary);
+  font-size: 1.2rem;
 }
 
 /* Responsive Design */
@@ -856,6 +921,7 @@ input:checked + .slider-round:before {
 
   .component-grid {
     /* Change grid to single column */
+
   }
 
   .btn-group {
