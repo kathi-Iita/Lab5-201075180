@@ -709,17 +709,28 @@ input:checked + .slider-round:before {
 .page-link {
   /* TODO: Add page link styles */
   /* HINT: Use display, padding, border, border-radius, color, text-decoration, transition, and cursor */
-  
+  display: inline-block;
+  padding: 8px 12px;
+  border: 1px solid var(#ced4da);
+  border-radius: 5px;
+  color: var(#212529);
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(all 0.3s ease);
 }
 
 .page-link:hover {
   /* TODO: Add hover styles for page links */
   /* HINT: Change background-color */
+  background-color: var(#f8f9fa);
 }
 
 .page-item.active .page-link {
   /* TODO: Add styles for active page link */
   /* HINT: Use background-color, color, and border-color */
+  background-color: var(#4361ee);
+  color: #0c5460;
+  border-color: var(#4361ee);
 }
 
 /* Breadcrumb Styles */
@@ -878,62 +889,93 @@ input:checked + .slider-round:before {
 .accordion-item {
   /* TODO: Add accordion item styles */
   /* HINT: Use border, border-radius, margin-bottom, and overflow */
+  border: 1px solid var(#ced4da);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
 }
 
 .accordion-header {
   /* TODO: Add accordion header styles */
   /* HINT: Use padding, background-color, cursor, display, justify-content, align-items, and font-weight */
+  padding: 15px 20px;
+  background-color: var(#f8f9fa);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
 }
 
 .accordion-content {
   /* TODO: Add accordion content styles */
   /* HINT: Use padding, max-height, overflow, and transition */
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: var(all 0.3s ease);
 }
 
 .accordion-content.active {
   /* TODO: Add styles for active accordion content */
   /* HINT: Use padding and max-height */
+  padding: 15px 20px;
+  max-height: 200px;
 }
 
 /* Tabs Styles */
 .tabs {
   /* TODO: Add tabs container styles */
   /* HINT: Use margin */
+  margin: 20px 0;
 }
 
 .tab-header {
   /* TODO: Add tab header styles */
   /* HINT: Use display and border-bottom */
+  display: flex;
+  border-bottom: 2px solid var(#e9ecef);
 }
 
 .tab-link {
   /* TODO: Add tab link styles */
   /* HINT: Use padding, cursor, transition, and border-bottom */
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: var(all 0.3s ease);
+  border-bottom: 2px solid transparent;
 }
 
 .tab-link:hover {
   /* TODO: Add hover styles for tab links */
   /* HINT: Change color */
+  color: var(#4361ee);
 }
 
 .tab-link.active {
   /* TODO: Add styles for active tab link */
   /* HINT: Use color and border-bottom */
+  color: var(#4361ee);
+  border-bottom: 2px solid var(#4361ee);
+
 }
 
 .tab-content {
   /* TODO: Add tab content styles */
   /* HINT: Use padding */
+  padding: 20px 0;
 }
 
 .tab-pane {
   /* TODO: Add tab pane styles */
   /* HINT: Use display property */
+  display: none;
 }
 
 .tab-pane.active {
   /* TODO: Add styles for active tab pane */
   /* HINT: Change display */
+  display: block;
 }
 
 /* Dropdown Styles */
