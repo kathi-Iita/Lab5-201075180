@@ -548,110 +548,168 @@ input:checked + .slider-round:before {
 .badge-primary {
   /* TODO: Add primary badge styles */
   /* HINT: Use background-color and color */
+  background-color: var(#4361ee);
+  color: var(#ffffff);
 }
 
 .badge-success {
   /* TODO: Add success badge styles */
   /* HINT: Use background-color and color */
+  background-color: var(#4cc9f0);
+  color: var(#ffffff);
 }
 
 .badge-warning {
   /* TODO: Add warning badge styles */
   /* HINT: Use background-color and color */
+  background-color: var(#f72585);
+  color: var(#ffffff);
 }
 
 /* Alert Styles */
 .alert {
   /* TODO: Add alert styles */
   /* HINT: Use padding, border-radius, margin-bottom, display, align-items, and justify-content */
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(0 4px 6px rgba(0, 0, 0, 0.1));
 }
 
 .alert i {
   /* TODO: Add icon styles in alerts */
   /* HINT: Use margin-right and font-size */
+  margin-right: 10px;
+  font-size: 1.5rem;
 }
 
 .alert-content {
   /* TODO: Add alert content styles */
   /* HINT: Use display and align-items */
+  display: flex;
+  align-items: center;
 }
 
 .alert-close {
   /* TODO: Add alert close button styles */
   /* HINT: Use cursor and font-weight */
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .alert-success {
   /* TODO: Add success alert styles */
   /* HINT: Use background-color, color, and border-left */
+  background-color: var(#d4edda);
+  color: var(#155724);
+  border-left: 5px solid var(#4cc9f0);
 }
 
 .alert-warning {
   /* TODO: Add warning alert styles */
   /* HINT: Use background-color, color, and border-left */
+  background-color: var(#fff3cd);
+  color: var(#856404);
+  border-left: 5px solid var(#f72585);
 }
 
 .alert-info {
   /* TODO: Add info alert styles */
   /* HINT: Use background-color, color, and border-left */
+  background-color: var(#d1ecf1);
+  color: var(#0c5460);
+  border-left: 5px solid var(#7209b7);
 }
 
 /* Navigation Styles */
 .nav {
   /* TODO: Add navigation styles */
   /* HINT: Use display, background-color, border-radius, overflow, and margin-bottom */
+  display: flex;
+  background-color: var(#ffffff);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px; 
+  box-shadow: var(0 4px 6px rgba(0, 0, 0, 0.1));
 }
 
 .nav-item {
   /* TODO: Add navigation item styles */
   /* HINT: Use padding, color, text-decoration, transition */
+  padding: 10px 15px;
+  color: var(#212529);
+  text-decoration: none;
+  transition: var(all 0.3s ease);
 }
 
 .nav-item:hover {
   /* TODO: Add hover styles for nav items */
   /* HINT: Change background-color */
+  background-color: var(#f8f9fa);
 }
 
 .nav-item.active {
   /* TODO: Add styles for active nav item */
   /* HINT: Use background-color and font-weight */
+  background-color: var(#4361ee);
+  color: var(#ffffff);
 }
 
 /* Progress Bar Styles */
 .progress {
   /* TODO: Add progress bar container styles */
   /* HINT: Use height, background-color, border-radius, margin, and overflow */
+  height: 20px;
+  background-color: var(#e9ecef);
+  border-radius: 10px;
+  margin: 20px 0;
+  overflow: hidden;
 }
 
 .progress-bar {
   /* TODO: Add progress bar styles */
   /* HINT: Use height, border-radius, and transition */
+  height: 100%;
+  border-radius: 10px;
+  transition: var(all 0.3s ease);
 }
 
 .progress-primary {
   /* TODO: Add primary progress bar styles */
   /* HINT: Use background-color */
+  background-color: var(#4361ee);
 }
 
 .progress-success {
   /* TODO: Add success progress bar styles */
   /* HINT: Use background-color */
+  background-color: var(#4cc9f0);
 }
 
 /* Pagination Styles */
 .pagination {
   /* TODO: Add pagination styles */
   /* HINT: Use display, list-style, padding, and margin */
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+
 }
 
 .page-item {
   /* TODO: Add page item styles */
   /* HINT: Use margin-right */
+  margin-right: auto;
 }
 
 .page-link {
   /* TODO: Add page link styles */
   /* HINT: Use display, padding, border, border-radius, color, text-decoration, transition, and cursor */
+  
 }
 
 .page-link:hover {
@@ -668,84 +726,153 @@ input:checked + .slider-round:before {
 .breadcrumb {
   /* TODO: Add breadcrumb styles */
   /* HINT: Use display, list-style, padding, and margin */
+  display: flex;
+  list-style: none;
+  padding: 0;
 }
 
 .breadcrumb-item {
   /* TODO: Add breadcrumb item styles */
   /* HINT: Use display and align-items */
+  display: flex;
+  align-items: center;
 }
 
 .breadcrumb-item:not(:last-child)::after {
   /* TODO: Add separator for breadcrumb items */
   /* HINT: Use content, margin, and color */
+  content: '>';
+  margin: 0 8px;
+  color: var(#6c757d);
 }
 
 .breadcrumb-link {
   /* TODO: Add breadcrumb link styles */
   /* HINT: Use color, text-decoration, and cursor */
+  color: var(#4361ee);
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .breadcrumb-link:hover {
   /* TODO: Add hover styles for breadcrumb links */
   /* HINT: Add text-decoration */
+  text-decoration: none;
 }
 
 .breadcrumb-item.active {
   /* TODO: Add styles for active breadcrumb item */
   /* HINT: Use color */
+  color: var(#6c757d);
 }
 
 /* Modal Styles */
 .modal {
   /* TODO: Add modal styles */
   /* HINT: Use display, position, top/left, width, height, background-color, z-index, justify-content, and align-items */
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-content {
   /* TODO: Add modal content styles */
   /* HINT: Use background-color, border-radius, width, max-width, padding, and box-shadow */
+  background-color: var(#ffffff);
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  box-shadow: var(0 4px 6px rgba(0, 0, 0, 0.1));
 }
 
 .modal-header {
   /* TODO: Add modal header styles */
   /* HINT: Use display, justify-content, align-items, and margin-bottom */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .modal-title {
   /* TODO: Add modal title styles */
   /* HINT: Use font-size and color */
+  font-size: 1.5rem;
+  color: var(#212529);
 }
 
 .modal-close {
   /* TODO: Add modal close button styles */
   /* HINT: Use background, border, font-size, cursor, and color */
+  background: none;
+  border: none;
+  font-size: large;
+  cursor: pointer;
+  color: var(#6c757d);
 }
 
 /* Tooltip Styles */
 .tooltip {
   /* TODO: Add tooltip styles */
   /* HINT: Use position, display, border-bottom, and cursor */
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted var(#212529);
+  cursor: pointer;
 }
 
 .tooltip .tooltip-text {
   /* TODO: Add tooltip text styles */
   /* HINT: Use visibility, width, background-color, color, text-align, border-radius, padding, position, z-index, bottom, left, margin-left, opacity, and transition */
+  visibility: hidden;
+  width: 120px;
+  background-color: var(#212529);
+  color: var(#ffffff);
+  text-align: right;
+  border-radius: 5px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: var(all 0.3s ease);  
 }
 
 .tooltip .tooltip-text::after {
   /* TODO: Add tooltip arrow styles */
   /* HINT: Use content, position, top, left, margin-left, border-width, border-style, and border-color */
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(#212529) transparent transparent transparent;
 }
 
 .tooltip:hover .tooltip-text {
   /* TODO: Add hover styles for tooltip */
   /* HINT: Change visibility and opacity */
+  visibility: visible;
+  opacity: 1;
 }
 
 /* Accordion Styles */
 .accordion {
   /* TODO: Add accordion styles */
   /* HINT: Use margin */
+  margin: 20px 0;
 }
 
 .accordion-item {
