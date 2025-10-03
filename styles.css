@@ -966,6 +966,7 @@ input:checked + .slider-round:before {
   padding: 20px 0;
 }
 
+
 .tab-pane {
   /* TODO: Add tab pane styles */
   /* HINT: Use display property */
